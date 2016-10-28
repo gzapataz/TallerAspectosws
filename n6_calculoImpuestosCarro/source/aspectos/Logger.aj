@@ -8,13 +8,12 @@ public aspect Logger {
 		
 		StringBuffer signatureString = new StringBuffer("");
 		StringBuffer methodName = new StringBuffer("");
+		StringBuffer callObject = new StringBuffer("");
 		
 		signatureString.append(thisJoinPointStaticPart.getSignature().toShortString());
-		methodName.append(signatureString.substring(signatureString.indexOf("."), signatureString.lastIndexOf("(") - 1));
-		System.out.println("Metodo:" + methodName);
-		System.out.println("Objeto:" + methodName);
-		
-		
+		methodName.append(signatureString.substring(signatureString.indexOf(".") + 1, signatureString.lastIndexOf("(")));
+		callObject.append(signatureString.substring(0, signatureString.indexOf(".")));
+		System.out.println("Objeto:" + callObject + " Metodo:" + methodName);
 		Object[] args = thisJoinPoint.getArgs();
 		StringBuffer sb = new StringBuffer("[");
 		for (int i = 0; i < args.length; i++) {
