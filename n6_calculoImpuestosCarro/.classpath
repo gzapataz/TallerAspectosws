@@ -5,5 +5,7 @@
 	<classpathentry kind="lib" path="test/lib/junit.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/Gabriel/Documents/Fabricasdesw/Talleres/Talleraspectos/n6_calculoImpuestosCarro/api/javamail-1.4.7/mail.jar"/>
+	<classpathentry kind="lib" path="/Users/Gabriel/Documents/Fabricasdesw/Talleres/Talleraspectos/n6_calculoImpuestosCarro/api/jaf-1.1.1/activation.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>
